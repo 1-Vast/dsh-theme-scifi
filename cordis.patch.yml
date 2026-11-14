@@ -1,0 +1,8 @@
+# dsh-theme-scifi bundle patch. `dsh plugin --profile <name> add <package>`
+# reconciles the profile's bundle list from this declaration and mounts the
+# row below in both the Host Loader and the browser roster. Its config
+# (enabled / style / motion) is written by the 科幻主题设置 / Sci-fi theme
+# settings section into the profile's own cordis.patch.yml.
+- insert:
+    - id: theme-scifi
+      name: 'dsh-theme-scifi'

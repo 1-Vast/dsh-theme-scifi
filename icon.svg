@@ -1,0 +1,22 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="18" cy="19" rx="15" ry="4.4" stroke="url(#disk)" stroke-width="2.4" />
+  <circle cx="18" cy="18" r="8.6" stroke="url(#ring)" stroke-width="1.6" />
+  <circle cx="18" cy="18" r="7" fill="#0C0A14" />
+  <path d="M3 19c0 2.43 6.72 4.4 15 4.4s15-1.97 15-4.4" stroke="url(#front)" stroke-width="2.4" stroke-linecap="round" />
+  <defs>
+    <linearGradient id="disk" x1="3" y1="19" x2="33" y2="19" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7A2F" />
+      <stop offset="0.5" stop-color="#FFD27A" />
+      <stop offset="1" stop-color="#E0552A" />
+    </linearGradient>
+    <linearGradient id="ring" x1="18" y1="9.4" x2="18" y2="26.6" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE7B0" />
+      <stop offset="1" stop-color="#FF9A45" />
+    </linearGradient>
+    <linearGradient id="front" x1="3" y1="21" x2="33" y2="21" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8A3D" />
+      <stop offset="0.45" stop-color="#FFF1CC" />
+      <stop offset="1" stop-color="#F06A30" />
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,72 @@
+{
+  "name": "dsh-theme-scifi",
+  "version": "1.0.0",
+  "description": "Five physically computed sci-fi themes for the DeepSeek Harness web UI and desktop app — BLACK HOLE, ORRERY, LATTICE, FIELD and SIGNAL. Each restyles the shell and paints a live scene behind it that reacts to the agent at work.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-theme",
+    "theme",
+    "sci-fi",
+    "black-hole",
+    "client"
+  ],
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/build.mjs --check && node test/smoke.mjs",
+    "pack:local": "node scripts/build.mjs && pnpm pack --out dsh-theme-scifi.tgz"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.5"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.31",
+    "esbuild": "0.28.1",
+    "jsdom": "29.1.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "6.0.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
